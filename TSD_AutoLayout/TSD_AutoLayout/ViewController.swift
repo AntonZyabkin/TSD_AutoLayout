@@ -14,6 +14,7 @@ class ViewController: UIViewController {
         let view = UIView ()
         view.backgroundColor = .red
         view.translatesAutoresizingMaskIntoConstraints = false
+        view.alpha = 0.4
         return view
     }()
     var viewGreen : UIView = {
@@ -28,9 +29,13 @@ class ViewController: UIViewController {
         view.addSubview(viewRed)
         view.addSubview(viewGreen)
         
+        createRedViewConstraint ()
+        createGreenViewConstraint ()
+        
+        
         
         //ниже показано как можно добавить канстрейнты с помощью visual format language
-        
+        /*_____________________________________
         let viewVFL = ["viewRed": viewRed, "viewGreen": viewGreen] // тут зададем словарь с вью которые необходимо ограницить. Их отлавливаем по ключу в строке with visual format:
         let metrics = ["height": 100, "width": view.bounds.size.width / 3, "top": view.bounds.size.height / 20]
         view.addConstraints(NSLayoutConstraint.constraints(withVisualFormat: "V:|-top-[viewRed(height)]|",
@@ -45,7 +50,7 @@ class ViewController: UIViewController {
                                                            options: [],
                                                            metrics: metrics,
                                                            views: viewVFL))
-        
+        _________________________*/
     }
 
     
@@ -115,5 +120,23 @@ class ViewController: UIViewController {
                             constant: 100).isActive = true
     }
  */
+    
+    
+    
+    private func createRedViewConstraint () {
+        viewRed.leftAnchor.constraint(equalTo: view.leftAnchor, constant: 10).isActive = true
+        viewRed.widthAnchor.constraint(equalTo: view.widthAnchor, multiplier: 1/3).isActive = true
+        viewRed.heightAnchor.constraint(equalTo: view.heightAnchor, multiplier: 0.5).isActive = true
+        viewRed.centerYAnchor.constraint(equalTo: view.centerYAnchor).isActive = true
+    }
+    
+    
+    private func createGreenViewConstraint () {
+        viewGreen.rightAnchor.constraint(equalTo: view.rightAnchor, constant: -10).isActive = true
+//        viewGreen.widthAnchor.constraint(equalTo: view.widthAnchor, multiplier: 1/3).isActive = true
+        viewGreen.heightAnchor.constraint(equalTo: view.heightAnchor, multiplier: 0.5).isActive = true
+        viewGreen.centerYAnchor.constraint(equalTo: view.centerYAnchor).isActive = true
+        viewGreen.leftAnchor.constraint(lessThanOrEqualTo: viewRed.rightAnchor).isActive = true
+    }
 }
 
