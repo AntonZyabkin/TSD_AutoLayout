@@ -16,6 +16,7 @@ class NSLayoutConstrainViewController: BaseViewController {
         createLayoutConstraintGreenView ()
         createLayoutConstraintGrayView ()
         createLayoutConstraintGrayView ()
+        grayView.layer.zPosition = -1
     }
 
     private func createLayoutConstraintYellowView () {
@@ -73,7 +74,7 @@ class NSLayoutConstrainViewController: BaseViewController {
                             toItem: yellowView,
                             attribute: .top,
                             multiplier: 1,
-                            constant: -25).isActive = true
+                            constant: -yellowView.frame.height/5).isActive = true
         
         //задает ограничение для height
         NSLayoutConstraint (item: redView,
@@ -112,7 +113,7 @@ class NSLayoutConstrainViewController: BaseViewController {
                             toItem: yellowView,
                             attribute: .bottom,
                             multiplier: 1,
-                            constant: 25).isActive = true
+                            constant: yellowView.frame.height/5).isActive = true
         
         //задает ограничение для height
         NSLayoutConstraint (item: greenView,
@@ -142,7 +143,7 @@ class NSLayoutConstrainViewController: BaseViewController {
                             toItem: redView,
                             attribute: .leading,
                             multiplier: 1,
-                            constant: -view.frame.width/10).isActive = true
+                            constant: -yellowView.frame.height/5).isActive = true
         
         //задает отступ вверх от красной вью
         NSLayoutConstraint (item: grayView,
@@ -151,7 +152,7 @@ class NSLayoutConstrainViewController: BaseViewController {
                             toItem: redView,
                             attribute: .top,
                             multiplier: 1,
-                            constant: -view.frame.height/10).isActive = true
+                            constant: -yellowView.frame.height/5).isActive = true
         
         //задает отступ вниз от зеленой вью
         NSLayoutConstraint (item: grayView,
@@ -160,7 +161,7 @@ class NSLayoutConstrainViewController: BaseViewController {
                             toItem: greenView,
                             attribute: .bottom,
                             multiplier: 1,
-                            constant: view.frame.height/10).isActive = true
+                            constant: yellowView.frame.height/5).isActive = true
         
         //задает отступ вправо от красной вью
         NSLayoutConstraint (item: grayView,
@@ -169,7 +170,7 @@ class NSLayoutConstrainViewController: BaseViewController {
                             toItem: redView,
                             attribute: .trailing,
                             multiplier: 1,
-                            constant: view.frame.width/10).isActive = true
+                            constant: yellowView.frame.height/5).isActive = true
 
     }
     
