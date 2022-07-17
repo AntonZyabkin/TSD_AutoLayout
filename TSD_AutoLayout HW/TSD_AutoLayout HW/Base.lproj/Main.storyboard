@@ -105,11 +105,38 @@
                         <viewLayoutGuide key="safeArea" id="rYX-J9-nuB"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <navigationItem key="navigationItem" id="4rf-wW-wcS"/>
+                    <navigationItem key="navigationItem" id="4rf-wW-wcS">
+                        <barButtonItem key="rightBarButtonItem" title="Item" image="arrow.right.circle.fill" catalog="system" id="gDF-iw-JbU">
+                            <color key="tintColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <connections>
+                                <segue destination="nVy-Vn-0p1" kind="push" id="AfV-rB-AF8"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="CL7-AD-Erh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="623" y="-403"/>
+        </scene>
+        <!--Layout Anchor View Controller-->
+        <scene sceneID="kFc-Ne-RWI">
+            <objects>
+                <viewController storyboardIdentifier="NSLayoutAnchorViewController" id="nVy-Vn-0p1" customClass="NSLayoutAnchorViewController" customModule="TSD_AutoLayout_HW" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="cNw-ga-dZr">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="8bX-tE-Xbn"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="0AE-nQ-umU">
+                        <barButtonItem key="rightBarButtonItem" title="Item" image="arrow.right.circle.fill" catalog="system" id="7oO-7U-1vG">
+                            <color key="tintColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </barButtonItem>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="OzH-EJ-LMq" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1332" y="-403"/>
         </scene>
     </scenes>
     <resources>

@@ -15,6 +15,7 @@
 		E886AE8428845A7C00DF838B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E886AE8228845A7C00DF838B /* LaunchScreen.storyboard */; };
 		E886AE8C2884696800DF838B /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E886AE8B2884696800DF838B /* BaseViewController.swift */; };
 		E886AE8E28846B6B00DF838B /* NSLayoutConstrainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E886AE8D28846B6B00DF838B /* NSLayoutConstrainViewController.swift */; };
+		E886AE9028847A3A00DF838B /* NSLayoutAnchorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E886AE8F28847A3A00DF838B /* NSLayoutAnchorViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		E886AE8528845A7C00DF838B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E886AE8B2884696800DF838B /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		E886AE8D28846B6B00DF838B /* NSLayoutConstrainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSLayoutConstrainViewController.swift; sourceTree = "<group>"; };
+		E886AE8F28847A3A00DF838B /* NSLayoutAnchorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSLayoutAnchorViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,6 +67,7 @@
 				E886AE7B28845A7A00DF838B /* MainViewController.swift */,
 				E886AE8B2884696800DF838B /* BaseViewController.swift */,
 				E886AE8D28846B6B00DF838B /* NSLayoutConstrainViewController.swift */,
+				E886AE8F28847A3A00DF838B /* NSLayoutAnchorViewController.swift */,
 				E886AE7D28845A7A00DF838B /* Main.storyboard */,
 				E886AE8028845A7C00DF838B /* Assets.xcassets */,
 				E886AE8228845A7C00DF838B /* LaunchScreen.storyboard */,
@@ -146,6 +149,7 @@
 			files = (
 				E886AE7C28845A7A00DF838B /* MainViewController.swift in Sources */,
 				E886AE8C2884696800DF838B /* BaseViewController.swift in Sources */,
+				E886AE9028847A3A00DF838B /* NSLayoutAnchorViewController.swift in Sources */,
 				E886AE8E28846B6B00DF838B /* NSLayoutConstrainViewController.swift in Sources */,
 				E886AE7828845A7A00DF838B /* AppDelegate.swift in Sources */,
 				E886AE7A28845A7A00DF838B /* SceneDelegate.swift in Sources */,
